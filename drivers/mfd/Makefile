@@ -179,6 +179,7 @@ obj-$(CONFIG_MFD_HI6421_PMIC)	+= hi6421-pmic-core.o
 
 intel-soc-pmic-objs		:= intel_soc_pmic_core.o intel_soc_pmic_crc.o
 obj-$(CONFIG_INTEL_SOC_PMIC)	+= intel-soc-pmic.o
+obj-$(CONFIG_MFD_MT6323)	+= mt6323-core.o
 obj-$(CONFIG_MFD_MT6397)	+= mt6397-core.o
 obj-$(CONFIG_MT6397_MISC)	+= mt6397-misc.o
 obj-$(CONFIG_MT6323_AUXADC)	+= mt6323-auxadc.o
