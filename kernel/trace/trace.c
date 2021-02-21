@@ -1434,7 +1434,9 @@ void tracing_start(void)
 	struct ring_buffer *buffer;
 	unsigned long flags;
 	bool reset_ftrace = false;
+#ifdef CONFIG_MTK_SCHED_TRACERS
 	int cpu = 0;
+#endif
 
 	if (tracing_disabled)
 		return;

@@ -13,8 +13,8 @@
  */
 
 /dts-v1/;
-#include "mt8127.dtsi"
-#include "huawei8127_eg_bat_setting.dtsi"
+#include "mt8127.dts"
+//#include "huawei8127_eg_bat_setting.dtsi"
 
 / {
 	model = "AC8227L";

@@ -1231,9 +1231,10 @@ static int msdc_card_busy(struct mmc_host *mmc)
 {
 	struct msdc_host *host = mmc_priv(mmc);
 	u32 ret;
+	u32 status;
 
 	pm_runtime_get_sync(host->dev);
-	u32 status = readl(host->base + MSDC_PS);
+	status = readl(host->base + MSDC_PS);
 
 	/* check if any pin between dat[0:3] is low */
 	ret = (((status >> 16) & 0xf) != 0xf);
@@ -1633,7 +1634,7 @@ skip_fall:
 	internal_delay_phase = get_best_delay(host, internal_delay);
 	sdr_set_field(host->base + tune_reg, MSDC_PAD_TUNE_CMDRRDLY,
 				internal_delay_phase.final_phase);
-done:
+	
 	dev_err(host->dev, "Final cmd pad delay: %x\n", final_delay);
 	return final_delay == 0xff ? -EIO : 0;
 }

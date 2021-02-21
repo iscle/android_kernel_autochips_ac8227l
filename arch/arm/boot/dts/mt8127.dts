@@ -11,13 +11,12 @@
  * GNU General Public License for more details.
  */
 
-/*#include <dt-bindings/clock/mt8127-clk.h>
+#include <dt-bindings/clock/mt8127-clk.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 #include <dt-bindings/interrupt-controller/irq.h>
 #include <dt-bindings/power/mt8127-power.h>
 #include <dt-bindings/reset-controller/mt8127-resets.h>
-#include "skeleton64.dtsi"
-#include "mt8127-pinfunc.h"*/
+#include "mt8127-pinfunc.h"
 
 #ifdef CONFIG_MTK_DTBO_FEATURE
 /dts-v1/;

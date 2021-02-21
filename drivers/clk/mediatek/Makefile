@@ -23,7 +23,7 @@ ifeq ($(CONFIG_DEBUG_FS), y)
 subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/include
 obj-$(CONFIG_COMMON_CLK_MEDIATEK_NEW) += clkdbg.o clkchk.o
 obj-$(CONFIG_COMMON_CLK_MT2701) += clkdbg_mt2701.o clkchk_mt2701.o
-obj-$(CONFIG_COMMON_CLK_MT8127) += clkdbg_mt8127.o clkchk_mt8127.o
+#obj-$(CONFIG_COMMON_CLK_MT8127) += clkdbg_mt8127.o clkchk_mt8127.o
 obj-$(CONFIG_COMMON_CLK_MT8163) += clkdbg_mt8163.o clkchk_mt8163.o
 obj-$(CONFIG_COMMON_CLK_MT8173) += clkdbg_mt8173.o clkchk_mt8173.o
 endif
